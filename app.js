@@ -52,7 +52,6 @@ const addTask = function () {
 
 const editTask = function () {
     let listItem = this.parentNode;
-		console.log(listItem);
 
     let editInput = listItem.querySelector(".form__text");
     let label = listItem.querySelector(".form__label");
@@ -68,16 +67,13 @@ const editTask = function () {
     }
 
     listItem.classList.toggle("form_edit"); 
-
-		console.log(listItem);
-
 };
 
 const deleteTask = function () {
     let listItem = this.parentNode;
     let ul = listItem.parentNode;
 
-		ul.removeChild(listItem);
+    ul.removeChild(listItem);
 }
 
 const taskCompleted = function () {
@@ -97,8 +93,8 @@ const bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
     let editButton = taskListItem.querySelector(".form__btn_edit");
     let deleteButton = taskListItem.querySelector(".form__btn_delete");
 
-    editButton.onclick = editTask(taskListItem);
-	  deleteButton.onclick = deleteTask;
+    editButton.onclick = editTask;
+    deleteButton.onclick = deleteTask;
     checkBox.onchange = checkBoxEventHandler;
 }
 
