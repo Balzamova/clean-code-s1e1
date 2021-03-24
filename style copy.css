@@ -1,4 +1,4 @@
-.wrapper {
+body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -25,16 +25,14 @@
 	margin: 0 auto;
 }
 
-.add-block,
-.todo-block,
-.complete-block {  
-    margin-block-start: 3em;
+.section {  
+    margin-block-start: 2em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
 
-.title {
+.section__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -47,8 +45,7 @@
 .add-block__input, 
 .form__text {
     margin: 0;
-		width: 226px;
-    font-size: 18px;
+		font-size: 18px;
     line-height: 18px;
     height: 21px;
     padding: 0 9px;
@@ -61,37 +58,36 @@
 }
 
 .add-block__input {
-	width: 318px;
+	width: 316px;
 }
 
 .form__text:focus {
     color: #333;
 }
 
-.add-block__button,
-.btn-edit,
-.btn-delete {
+.add-block__btn,
+.form__btn_edit,
+.form__btn_delete {
 	background: none;
 	border: 0px;
-		color: #888;
+	color: #888;
 	font-size: 15px;
-		width: 60px;
+	width: 60px;
 	font-family: Lato, sans-serif;
 	cursor: pointer;
 	outline: none;
 }
 
-.add-block__button:hover {
+.add-block__btn:hover {
 	color: #0FC57C;
 }
 
-.btn-edit:hover,
-.btn-delete:hover {
+.form__btn_edit:hover,
+.form__btn_delete:hover {
 	color: #3a3A3a;
 }
 
-.todo-block__form,
-.complete-block__form {
+.form {
 	overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -103,37 +99,44 @@
 		outline: none;
 }
 
-.form__text {
-	display: none;
-}
-
 .task {
 	width: 56%;
 	display: inline-block;
 }
 
-.btn-delete__image {
+.form__image {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-.btn-delete__image:hover {
+.form__image:hover {
     transform: rotateZ(0);
 }
 
-.form__edit .form__text {
+.form__label {
+	padding-left: 10px;
+	box-sizing: border-box;
+	font-size: 18px;
+	width: 226px;
+}
+
+.form__text {
+	display: none;
+}
+
+.form_edit .form__text {
 	display: inline-block;
-	width: 224px;
+	width: 207px;
 }
 
-.form__edit .form__label {
-display: none;
+.complete-block__container .form__label {
+	text-decoration: line-through;
+	color: #888;
 }
 
-.complete-block__form .form__label {
-    text-decoration: line-through;
-    color: #888;
+.form_edit .form__label {
+  display: none;
 }
 
 @media (max-width: 768px) {

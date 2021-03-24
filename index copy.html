@@ -15,48 +15,49 @@
 			<a class="matrix__info" href="https://goal-life.com/page/method/matrix-eisenhower"> Want more details? </a>
 		</article>
 
-		<main class="main">		
-			<section class="">
-				<h3 class=""> Add Item </h3>
-				<input class="" type="text">
-				<button class=""> Add </button>
+		<main class="main">
+		
+			<section class="add-block section">
+				<h3 class="section__title"> Add Item </h3>
+				<input class="add-block__input" type="text">
+				<button class="add-block__btn"> Add </button>
 			</section>
 
-			<section class="">
-				<h3 class=""> Todo </h3>
-				<div class="">
-					<form class="" action="">
-						<input class="" type="checkbox">
-						<label class=" task"> Pay Bills </label>
-						<input class="" type="text">
-						<button class=""> Edit </button>
-						<button class="">
-							<img class="" src="./remove.svg" alt="">
+			<section class="todo-block section">
+				<h3 class="section__title"> Todo </h3>
+				<div class="todo-block__container">
+					<form class="form" action="">
+						<input class="form__checkbox" type="checkbox">
+						<label class="form__label task"> Pay Bills </label>
+						<input class="form__text" type="text">
+						<button class="form__btn_edit"> Edit </button>
+						<button class="form__btn_delete">
+							<img class="form__image" src="./remove.svg" alt="">
 						</button>
 					</form>
 
-					<form class=" form_edit" action="">
-						<input class="" type="checkbox">
-						<label class=" task"> Go Shopping </label>
-						<input class=" task" type="text" value="Go Shopping">
-						<button class=""> Save </button>
-						<button class="">
-							<img class="" src="./remove.svg" alt="">
+					<form class="form form_edit" action="">
+						<input class="form__checkbox" type="checkbox">
+						<label class="form__label task"> Go Shopping </label>
+						<input class="form__text task" type="text" value="Go Shopping">
+						<button class="form__btn_edit"> Save </button>
+						<button class="form__btn_delete">
+							<img class="form__image" src="./remove.svg" alt="">
 						</button>
 					</form>
 				</div>
 			</section>
 
-			<section class="">
-				<h3 class=""> Completed </h3>
-				<div class="">
-					<form class="" action="">
-						<input class="" type="checkbox" checked>
-						<label class=" task"> See the Doctor </label>
-						<input class="" type="text">
-						<button class=""> Edit </button>
-						<button class="">
-							<img class="" src="./remove.svg" alt="">
+			<section class="complete-block section">
+				<h3 class="section__title"> Completed </h3>
+				<div class="complete-block__container">
+					<form class="form form_complete" action="">
+						<input class="form__checkbox" type="checkbox" checked>
+						<label class="form__label task"> See the Doctor </label>
+						<input class="form__text" type="text">
+						<button class="form__btn_edit"> Edit </button>
+						<button class="form__btn_delete">
+							<img class="form__image" src="./remove.svg" alt="">
 						</button>
 					</form>
 				</div>
