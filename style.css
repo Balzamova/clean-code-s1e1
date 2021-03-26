@@ -72,7 +72,7 @@
   border: 0px;
   color: #888;
   font-size: 15px;
-  width: 60px;
+  width: 50px;
   font-family: Lato, sans-serif;
   cursor: pointer;
   outline: none;
@@ -118,7 +118,7 @@
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
-  width: 198px;
+  width: 215px;
 }
 
 .task-form__text {
@@ -127,7 +127,7 @@
 
 .task-form_edit .task-form__text {
   display: inline-block;
-  width: 177px;
+  width: 197px;
 }
 
 .complete-block__container .task-form__label {

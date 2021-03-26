@@ -4,7 +4,7 @@ const incompleteTaskHolder = document.querySelector(".todo-block__container");
 const completedTasksHolder = document.querySelector(".complete-block__container");
 
 const createNewTaskElement = function (taskString) {
-    let listItem = document.createElement("form");
+    let listItem = document.createElement("li");
     let checkBox = document.createElement("input");
     let label = document.createElement("label");
     let editInput = document.createElement("input");
