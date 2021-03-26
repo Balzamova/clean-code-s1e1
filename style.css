@@ -38,7 +38,7 @@
   font-size: 15px;
   border-bottom: 2px solid #333;
   padding-bottom: 10px;
-  text-transtask-form: uppercase;
+  text-transform: uppercase;
   list-style: none;
 }
 
@@ -106,12 +106,12 @@
 
 .task-form__image {
   height: 2em;
-  transtask-form: rotateZ(45deg);
-  transition: transtask-form 200ms ease-in;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
 }
 
 .task-form__image:hover {
-  transtask-form: rotateZ(0);
+  transform: rotateZ(0);
 }
 
 .task-form__label {
