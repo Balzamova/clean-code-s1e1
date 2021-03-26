@@ -118,7 +118,7 @@
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
-  width: 226px;
+  width: 198px;
 }
 
 .task-form__text {
@@ -127,7 +127,7 @@
 
 .task-form_edit .task-form__text {
   display: inline-block;
-  width: 207px;
+  width: 177px;
 }
 
 .complete-block__container .task-form__label {
